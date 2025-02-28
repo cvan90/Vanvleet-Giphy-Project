@@ -1,6 +1,6 @@
 function page_load(){
 
-    const msgText = "# page4: page load"
+    const msgText = "Project Page Loaded"
 
     console.log(msgText.toUpperCase())
 }
