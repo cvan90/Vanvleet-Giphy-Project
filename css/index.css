@@ -4,3 +4,9 @@ h1 {
 .global-footer {
     text-align: center;
 }
+.global-center-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
