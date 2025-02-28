@@ -126,3 +126,23 @@ function btnSearch(){
     txtsearch.focus(); 
   
   }
+
+function lnkClear() {
+
+    let msgText = "# page5: lnkClear"
+    console.log(msgText.toUpperCase());
+  
+    
+    const txtsearch = document.getElementById("txtsearch");
+    const divdisplayinfo = document.getElementById("divdisplayinfo");
+  
+  
+   
+    if(txtsearch == null | txtsearch == undefined){
+        msgText = "txtsearch is null"
+        return false;
+    }
+    txtsearch.value = "";
+    txtsearch.focus(); 
+      
+  }
