@@ -6,7 +6,7 @@ function page_load(){
 }
 function btnSearch(){
 
-    let msgText = "# page5: btnSearch" 
+    let msgText = "btnSearch" 
     console.log(msgText.toUpperCase());  
   
    
@@ -15,20 +15,20 @@ function btnSearch(){
   
   
     if(txtsearch == null){
-        msgText = "# txtsearch field not found"
+        msgText = "txtsearch field not found"
         console.log(msgText)
         return false 
     }
   
     if(divdisplayinfo == null){
-        msgText = "# divdisplayinfo field not found"
+        msgText = "divdisplayinfo field not found"
         console.log(msgText)
         return false 
     }
   
 
     if(txtsearch.value.trim().length == 0) {
-        msgText = "# please enter a valid search text"
+        msgText = "please enter a valid search text"
         console.log(msgText)
         divdisplayinfo.innerText = msgText
         return false 
@@ -66,7 +66,7 @@ function btnSearch(){
         })
         .then(data => {
     
-            console.log("#### giphy fetch.promise then - post data ###")
+            console.log("giphy fetch.promise then - post data")
             console.log(data);
     
             console.log("")
@@ -77,7 +77,7 @@ function btnSearch(){
             let _image = "";
             
             if(data == null | data.data.length == 0){
-              divdisplayinfo.innerText = "# no results found"
+              divdisplayinfo.innerText = "no results found"
               return false;
             }
   
@@ -114,7 +114,7 @@ function btnSearch(){
             
         })
         .catch(error => {
-          console.error('## There was a problem with the fetch operation:', error);
+          console.error('There was a problem with the fetch operation:', error);
           divdisplayinfo.innerText = error;
         });
     
@@ -129,7 +129,7 @@ function btnSearch(){
 
 function lnkClear(){
 
-    let msgText = "# page5: lnkClear"
+    let msgText = "lnkClear"
     console.log(msgText.toUpperCase());
   
     
