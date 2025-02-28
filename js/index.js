@@ -127,7 +127,7 @@ function btnSearch(){
   
   }
 
-function lnkClear() {
+function lnkClear(){
 
     let msgText = "# page5: lnkClear"
     console.log(msgText.toUpperCase());
